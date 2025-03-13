@@ -31,6 +31,10 @@ li {
 	display: inline;
 }
 
+h2 {
+	font-size: 2em;
+}
+
 .section-fullwidth {
 	width: 100%;
 	/* background-color: #1c1c1c; */
@@ -131,6 +135,7 @@ li {
 	background-color: var(--black);
 	display: flex;
 	align-items: center;
+	flex-wrap: wrap-reverse;
 }
 
 .about h1 {
@@ -167,12 +172,13 @@ li {
 	padding: 1rem;
 	border-radius: 10px;
 	text-align: center;
-	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	;
 	transition: transform 0.3s;
 }
 
 .card:hover {
-  transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .card button {
@@ -193,8 +199,47 @@ li {
 .skills {
 	background-color: var(--black);
 	color: var(--primary);
-	padding: 2rem;
+	padding: 4rem;
 	text-align: center;
+}
+
+.skills-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 3em;
+	padding: 20px;
+	max-width: 1400px;
+	margin: auto;
+	justify-content: center;
+}
+
+.skill-card {
+	background: #1e1e1e;
+	padding: 16px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 6px 12px rgba(155, 93, 229, 0.5);
+}
+
+.icon {
+	font-size: 48px;
+	margin-bottom: 0.2em;
+}
+
+.skill-name {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.skill-description {
+	font-size: 14px;
+	color: #aaa;
+	margin-top: 5px;
 }
 
 footer {
