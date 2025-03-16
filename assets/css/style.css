@@ -1,10 +1,11 @@
 :root {
-	--primary: #7D569B;
-	--primary-hover: #714D8C;
-	--primary-dark: #5E4174;
+	--primary: #519152;
+	--primary-hover: #49834A;
+	--primary-dark: #3D6D3E;
 	--black: #272525;
 	--white: #FAFAFA;
 	--white-hover: #DFD5E6;
+	--light-active: #C9DDC9;
 }
 
 * {
@@ -173,8 +174,25 @@ h2 {
 	border-radius: 10px;
 	text-align: center;
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-	;
 	transition: transform 0.3s;
+}
+
+.card h3 {
+	color: var(--primary);
+}
+
+.card img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 16px;
+}
+
+.image-card-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0.2em 0;
 }
 
 .card:hover {
@@ -224,6 +242,7 @@ h2 {
 .skill-card:hover {
 	transform: scale(1.05);
 	box-shadow: 0 6px 12px rgba(155, 93, 229, 0.5);
+	box-shadow: 0 6px 12px rgba(201, 221, 201, 0.5);
 }
 
 .icon {
