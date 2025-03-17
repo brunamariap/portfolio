@@ -19,9 +19,15 @@
 				<!-- <a href="/index.html">
 					<img src="img/logo.svg" alt="Logo do site" class="logo_header">
 				</a> -->
-				<div>Logo</div>
+				<div class="logo-container">
+					<img src="./assets/icons/git.svg" alt="Logo">
+				</div>
 
-				<!-- <button class="hamburger"></button> -->
+				<button class="hamburger" id="menu-toggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
 
 				<ul class="navbar_links">
 					<li>
@@ -96,6 +102,18 @@
 		</footer>
 
 		<script src="./assets/js/skills.js"></script>
+		<script src="./assets/js/navbar.js"></script>
+
+		<!-- <script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const menuToggle = document.getElementById("menu-toggle");
+				const navbarLinks = document.querySelector(".navbar_links");
+
+				menuToggle.addEventListener("click", function () {
+					navbarLinks.classList.toggle("active");
+				});
+			});
+		</script> -->
 
 	</body>
 
