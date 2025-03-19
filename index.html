@@ -9,7 +9,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
 			rel="stylesheet">
-		<link rel="stylesheet" href="./assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
 	</head>
 
@@ -31,19 +31,19 @@
 
 				<ul class="navbar_links">
 					<li>
-						<a href="/index.html#about" class="navbar_link">Sobre</a>
+						<a href="#about" class="navbar_link scroll-link">Sobre</a>
 					</li>
 
 					<li>
-						<a href="/index.html#projects" class="navbar_link">Projetos</a>
+						<a href="#projects" class="navbar_link scroll-link">Projetos</a>
 					</li>
 
 					<li>
-						<a href="/index.html#skills" class="navbar_link">Habilidades</a>
+						<a href="#skills" class="navbar_link scroll-link">Habilidades</a>
 					</li>
 
 					<li>
-						<a href="/index.html#contact" class="navbar_link">Contato</a>
+						<a href="#contact" class="navbar_link scroll-link">Contato</a>
 					</li>
 				</ul>
 			</nav>
@@ -114,16 +114,17 @@
 		<script src="./assets/js/skills.js"></script>
 		<script src="./assets/js/navbar.js"></script>
 
-		<!-- <script>
-			document.addEventListener("DOMContentLoaded", function () {
-				const menuToggle = document.getElementById("menu-toggle");
-				const navbarLinks = document.querySelector(".navbar_links");
-
-				menuToggle.addEventListener("click", function () {
-					navbarLinks.classList.toggle("active");
+		<script>
+			document.querySelectorAll('.scroll-link').forEach(anchor => {
+				anchor.addEventListener('click', function (e) {
+					e.preventDefault();
+					const targetId = this.getAttribute('href').substring(1);
+					document.getElementById(targetId).scrollIntoView({
+						behavior: 'smooth'
+					});
 				});
 			});
-		</script> -->
+		</script>
 
 	</body>
 
