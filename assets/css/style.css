@@ -122,11 +122,18 @@ h2 {
 
 /* Section about */
 .profile-circle {
-	background: #ddd;
-	height: 360px;
-	width: 360px;
+	/* background: #ddd; */
+	height: 460px;
+	width: 460px;
 	border-radius: 50%;
 	margin: 2rem auto;
+}
+
+.profile-img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	border-radius: 50%;
 }
 
 .about {
@@ -136,6 +143,10 @@ h2 {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap-reverse;
+}
+
+.about-text-container {
+	max-width: 600px;
 }
 
 .about h1 {
@@ -301,11 +312,6 @@ footer .social-icons a {
 		top: 2.5em;
 		right: 4em;
 		background-color: var(--black);
-	}
-
-	.navbar.active .hamburger {
-		background-color: var(--primary);
-		/* Cor diferente quando ativo */
 	}
 
 	/* .hamburger::before,
