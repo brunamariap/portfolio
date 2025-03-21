@@ -138,7 +138,7 @@ h2 {
 
 .about {
 	text-align: center;
-	padding: 2rem 1rem;
+	padding: 0 1em 2em 1em;
 	background-color: var(--black);
 	display: flex;
 	align-items: center;
@@ -297,6 +297,10 @@ footer .social-icons a {
 }
 
 @media (max-width: 768px) {
+	.header {
+		padding: 32px 24px !important;
+	}
+
 	.logo-container {
 		position: absolute;
 		top: 2em;
@@ -313,29 +317,6 @@ footer .social-icons a {
 		right: 4em;
 		background-color: var(--black);
 	}
-
-	/* .hamburger::before,
-	.hamburger::after {
-		content: "";
-		display: block;
-		width: 30px;
-		height: 3px;
-		background-color: var(--primary);
-		margin: 6px 0;
-		transition: 0.3s;
-	}
-
-	.navbar.active .hamburger {
-		border-top-color: transparent;
-	}
-
-	.navbar.active .hamburger::before {
-		transform: rotate(45deg) translate(5px, 3px);
-	}
-
-	.navbar.active .hamburger::after {
-		transform: rotate(-45deg) translate(3px, -3px);
-	} */
 
 	.hamburger::before,
 	.hamburger::after {
@@ -370,7 +351,6 @@ footer .social-icons a {
 	.navbar.active .hamburger {
 		border-top-color: transparent;
 	}
-
 
 	.navbar_links {
 		position: fixed;
