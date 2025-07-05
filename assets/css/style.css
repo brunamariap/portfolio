@@ -275,7 +275,7 @@ footer {
 	padding: 1rem;
 	color: #8a60ff;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 }
 
@@ -399,5 +399,13 @@ footer .social-icons a {
 	.skills-container {
 		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 		gap: 1rem;
+	}
+
+	footer {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-around;
+		row-gap: 1rem;
 	}
 }
