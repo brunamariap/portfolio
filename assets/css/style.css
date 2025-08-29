@@ -136,10 +136,14 @@ h2 {
 	border-radius: 50%;
 }
 
+.main-about {
+	background-color: var(--black);
+}
+
 .about {
 	text-align: center;
 	padding: 0 1em 2em 1em;
-	background-color: var(--black);
+	/* background-color: var(--black); */
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap-reverse;
@@ -156,6 +160,57 @@ h2 {
 
 .about span {
 	color: var(--primary);
+}
+
+.cards-wrapper {
+	display: flex;
+	justify-content: center;
+	gap: 2em;
+	padding: 2em;
+}
+
+.card-about {
+	flex: 1;
+	max-width: 350px;
+	background: #f3f3f3;
+	border: 1px solid var(--primary);
+	/* verde neon */
+	border-radius: 12px;
+	padding: 1.5em;
+	color: #333;
+	box-shadow: 0 4px 15px rgba(99, 99, 99, 0.2);
+	/* sombra esverdeada */
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-about:hover {
+	transform: scale(1.05);
+	/* cresce ao passar o mouse */
+	box-shadow: 0 8px 25px var(--primary-hover);
+	/* brilho mais forte */
+}
+
+.card-about h2 {
+	color: var(--primary);
+	/* verde principal */
+	margin-bottom: 0.5em;
+}
+
+.card-about h3 {
+	color: var(--primary-dark);
+	/* verde mais suave */
+	margin-bottom: 0.5em;
+}
+
+.card-about .info {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+	margin-top: 1em;
+}
+
+.card-about p {
+	margin: 0.3em 0;
 }
 
 /* Section projects */
@@ -273,21 +328,39 @@ h2 {
 footer {
 	background-color: #FAFBFB;
 	padding: 1rem;
-	color: #8a60ff;
+	color: var(--primary);
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	flex-direction: column;
+	gap: 2em 0;
 }
 
 footer .social-icons {
 	display: flex;
 	gap: 10px;
+	flex-direction: column;
+	gap: 1em;
 }
 
 footer .social-icons a {
-	color: #8a60ff;
+	background: #fff;
+	padding: 1rem 1.5rem;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+	font-size: 1.3rem;
+	color: var(--primary);
 	font-size: 1.2rem;
 	text-decoration: none;
+	display: flex;
+	align-items: center;
+	gap: 1em;
+	transition: all 0.3s ease;
+}
+
+footer .social-icons a:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 768px) {
